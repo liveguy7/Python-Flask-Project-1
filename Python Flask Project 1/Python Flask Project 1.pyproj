@@ -18,6 +18,7 @@
     <Name>Python Flask Project 1</Name>
     <RootNamespace>Python Flask Project 1</RootNamespace>
     <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
