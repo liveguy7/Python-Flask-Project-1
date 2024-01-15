@@ -45,7 +45,10 @@
     <Folder Include="Python_Flask_Project_1\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Python_Flask_Project_1\templates\login.html" />
+    <Content Include="Python_Flask_Project_1\templates\register.html" />
     <Content Include="Python_Flask_Project_1\templates\test.html" />
+    <Content Include="Python_Flask_Project_1\templates\tmp.html" />
     <Content Include="requirements.txt" />
     <Content Include="Python_Flask_Project_1\static\content\bootstrap.css" />
     <Content Include="Python_Flask_Project_1\static\content\bootstrap.min.css" />

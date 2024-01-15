@@ -8,3 +8,8 @@ if __name__ == '__main__':
     except ValueError:
         PORT = 5555
     app.run(HOST, PORT)
+    
+    #app.config['SECRET_KEY'] = '5c629f2f2385c7de52baa3a586953a68'
+
+
+    

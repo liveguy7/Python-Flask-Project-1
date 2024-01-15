@@ -1,6 +1,7 @@
 from datetime import datetime
 from flask import render_template
 from Python_Flask_Project_1 import app
+from forms import *
 
 posts = [
     {
@@ -54,6 +55,29 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/register')
+def register():
+    form = RegistrationForm()
+    return render_template('register.html',
+                           title='Register',
+                           form=form)
+@app.route('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html',
+                           title='Login',
+                           form=form )
+
+
+
+
+
+
+
+
+
+
 
 
 
