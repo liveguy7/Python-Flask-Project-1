@@ -2,8 +2,20 @@
 
 {% block content %}
 
-<div class="container">
-   <h2>Jello {{title}} Here</h2>
-</div>
+{% for i in posts %}
 
-{% endblock %}
+<article class="media content-section">
+    <div class="media-body">
+        <div class="article-metadata">
+            <a class="mr-2" href="#">{{i.author}}</a>
+            <small class="text-muted">{{i.date}}</small>
+        </div>
+        <h2 class="article-title">{{i.title}}</h2>
+        <p class="article-content">{{i.content}}</p>
+    </div>
+</article>
+
+{% endfor %}
+
+
+{% endblock content %}

@@ -2,6 +2,21 @@ from datetime import datetime
 from flask import render_template
 from Python_Flask_Project_1 import app
 
+posts = [
+    {
+        'author': 'Pan Jello',
+        'title': 'Blog Post 1',
+        'content': 'First Post',
+        'date': '1/1/24'  
+    }, 
+    {
+        'author': 'Matt Han',
+        'title': 'Blog Post 2',
+        'content': 'Second Post',
+        'date': '1/2/24'  
+    }
+  ]
+
 @app.route('/')
 @app.route('/home')
 def home():
@@ -15,7 +30,9 @@ def home():
 @app.route('/test')
 def test():
     return render_template('test.html',
-                           title='Test Page')
+                           title='Jello',
+                           year=datetime.now().year,
+                           posts=posts)
 
 
 @app.route('/contact')
@@ -37,3 +54,7 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+
+
+
