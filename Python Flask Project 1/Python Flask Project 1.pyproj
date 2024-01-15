@@ -29,6 +29,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Python_Flask_Project_1\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="runserver.py" />
     <Compile Include="Python_Flask_Project_1\__init__.py" />
     <Compile Include="Python_Flask_Project_1\views.py" />
